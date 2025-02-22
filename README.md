@@ -6,6 +6,7 @@ LR1
 - `yum` -Это пакетный менеджер для дистрибутивов Linux на базе RPM, таких как CentOS и Red Hat.
 - `install` -Подкоманда для установки пакета.
 - `wget` - Имя пакета, который необходимо установить.
+  
   ![image](https://github.com/user-attachments/assets/06a75246-c870-4c77-b3ec-20e37544de64)
 
 
