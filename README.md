@@ -1,2 +1,2 @@
-# K-ISP-21-GAV
+# K-ISP-21-Gorshihina
 LR1
