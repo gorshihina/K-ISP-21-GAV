@@ -38,7 +38,19 @@ LR1
 - `"$COMVER"`- Использует переменную, содержащую номер версии.
 - `$(uname -s)` и `$(uname -m)`-  Определяет операционную систему и архитектуру (например, Linux и x86_64).
 - `-o /usr/bin/docker-compose`- Указывает, куда сохранить загруженный файл.
-  
-8.
+
+8. `sudo chmod +x /usr/bin/docker-compose`- Эта команда добавляет разрешение на выполнение загруженного файла Docker Compose. 
+- `chmod +x`-  Утилита для изменения разрешений.
+- `/usr/bin/docker-compose`- Путь к файлу, для которого добавляются разрешения.
+
+9. `docker-compose --version`- Эта команда проверяет установленную версию Docker Compose.
+- `docker-compose`- Утилита для работы с Docker Compose.
+- `--version`- Опция, которая выводит информацию о версии.
+
+10. `git clone https://github.com/skl256/grafana_stack_for_docker.git`- Эта команда создает локальную копию репозитория Git.
+- `git clone`- Команда для клонирования репозитория.
+- `https://github.com/skl256/grafana_stack_for_docker.git`- URL репозитория, который будет клонирован.
+
+11. cd grafana_stack_for_docker** - Команда `cd` (change directory) используется для перехода в директорию с именем `grafana_stack_for_docker`. Это означает, что текущая рабочая директория будет изменена на `grafana_stack_for_docker`, что позволит вам выполнять последующие команды внутри этой папки.
 
 
