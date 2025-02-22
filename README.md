@@ -14,8 +14,6 @@ LR1
 `sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo` - Эта команда загружает файл репозитория Docker для CentOS и помещает его в каталог `yum.repos.d`.
 
 - `wget` - Утилита для загрузки файлов.
-- 
 - `-P /etc/yum.repos.d/`- Опция `-P` указывает `wget`, куда сохранить загруженный файл.
-- 
 - `https://download.docker.com/linux/centos/docker-ce.repo`- URL-адрес файла, который нужно скачать.
-- 
+  
