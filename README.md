@@ -51,11 +51,24 @@ LR1
 - `git clone`- Команда для клонирования репозитория.
 - `https://github.com/skl256/grafana_stack_for_docker.git`- URL репозитория, который будет клонирован.
 
-11. `cd grafana_stack_for_docker**` - Команда `cd` (change directory) используется для перехода в директорию с именем `grafana_stack_for_docker`. Это означает, что текущая рабочая директория будет изменена на `grafana_stack_for_docker`, что позволит вам выполнять последующие команды внутри этой папки.
+11. `cd grafana_stack_for_docker*` - Команда `cd` (change directory) используется для перехода в директорию с именем `grafana_stack_for_docker`. Это означает, что текущая рабочая директория будет изменена на `grafana_stack_for_docker`, что позволит вам выполнять последующие команды внутри этой папки.
 
-12. `sudo mkdir -p /mnt/common_volume/swarm/grafana/config**` - Команда `mkdir` (make directory) создает новую директорию.
+12. `sudo mkdir -p /mnt/common_volume/swarm/grafana/config` - Команда `mkdir` (make directory) создает новую директорию.
  Опция `-p` позволяет создать промежуточные директории, если они не существуют. В данном случае создается директория `/mnt/common_volume/swarm/grafana/config`.
  Использование `sudo` означает, что команда будет выполнена с правами суперпользователя, что нужно для создания директорий в защищенных местах файловой системы.
+
+13. `sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}`- Эта команда также создает несколько директорий одновременно благодаря фигурным скобкам. Она создаст три директории: `grafana-config`, `grafana-data`, и `prometheus-data` по пути `/mnt/common_volume/grafana`. Как и в предыдущем случае, используется `sudo` для выполнения с правами суперпользователя.
+
+14. `sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}`- Команда `chown` изменяет владельца и группу для указанных директорий. Опция `-R` (рекурсивно) применяет изменения ко всем подкаталогам и файлам в указанных директориях.
+`$(id -u)` вернет идентификатор текущего пользователя, а `$(id -g)` — идентификатор его группы. Это позволяет сделать текущего пользователя владельцем директорий `/mnt/common_volume/swarm/grafana/config` и `/mnt/common_volume/grafana`.
+
+15. `touch /mnt/common_volume/grafana/grafana-config/grafana.ini` - Команда `touch` создает пустой файл или обновляет временную метку существующего файла.
+- В данном случае будет создан пустой файл `grafana.ini` в директории `/mnt/common_volume/grafana/grafana-config`. Этот файл, вероятно, будет использоваться для конфигурации Grafana.
+
+16. `cp config/* /mnt/common_volume/swarm/grafana/config/ `- Команда `cp` (copy) копирует файлы.
+- Здесь `config/` обозначает, что все файлы из локальной директории `config` будут скопированы в директорию `/mnt/common_volume/swarm/grafana/config/`.
+- Конечный символ `*` означает все файлы (и, возможно, каталоги) в указанной директории.
+
 
 
 
