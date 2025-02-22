@@ -101,8 +101,11 @@ LR1
 ![photo_5318794157298412358_y](https://github.com/user-attachments/assets/6eeb88ea-13a2-4536-bffc-870d10fd71f1)
 
 
-22. `/mnt/common_volume/swarm/grafana/config/prometheus.yaml - исправить targets: на exporter:9100`- Это скорее не команда, а комментарий с инструкцией о том, что нужно сделать с файлом `prometheus.yaml`, который был открыт ранее. Задача заключается в том, чтобы изменить значение параметра `targets` в этом файле, чтобы оно указывало на `exporter:9100`. Заменив это значение, вы настраиваете, откуда Prometheus должен собирать метрики.
+21. `/mnt/common_volume/swarm/grafana/config/prometheus.yaml - исправить targets: на exporter:9100`- Это скорее не команда, а комментарий с инструкцией о том, что нужно сделать с файлом `prometheus.yaml`, который был открыт ранее. Задача заключается в том, чтобы изменить значение параметра `targets` в этом файле, чтобы оно указывало на `exporter:9100`. Заменив это значение, вы настраиваете, откуда Prometheus должен собирать метрики.
 
+Grafana
+
+VictoriaMetrics
 
 
 
