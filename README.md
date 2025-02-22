@@ -59,10 +59,14 @@ LR1
 9. `docker-compose --version`- Эта команда проверяет установленную версию Docker Compose.
 - `docker-compose`- Утилита для работы с Docker Compose.
 - `--version`- Опция, которая выводит информацию о версии.
+![photo_5318794157298412316_x (1)](https://github.com/user-attachments/assets/78bb2533-e097-4345-a332-139f198df262)
+
 
 10. `git clone https://github.com/skl256/grafana_stack_for_docker.git`- Эта команда создает локальную копию репозитория Git.
 - `git clone`- Команда для клонирования репозитория.
 - `https://github.com/skl256/grafana_stack_for_docker.git`- URL репозитория, который будет клонирован.
+![photo_5318794157298412331_x](https://github.com/user-attachments/assets/9eac7661-0a58-433a-9ea6-84a44be9a847)
+
 
 11. `cd grafana_stack_for_docker*` - Команда `cd` (change directory) используется для перехода в директорию с именем `grafana_stack_for_docker`. Это означает, что текущая рабочая директория будет изменена на `grafana_stack_for_docker`, что позволит вам выполнять последующие команды внутри этой папки.
 
@@ -86,13 +90,18 @@ LR1
 
 18. `sudo docker compose up -d`- Эта команда запускает Docker Compose с конфигурацией, указанной в `docker-compose.yaml`.
 - Опция `-d` (detached mode) означает, что контейнеры будут запущены в фоновом режиме.
-- Использование `sudo` обеспечивает запуск с правами суперпользователя, потому что Docker обычно требуется такие права.\
+- Использование `sudo` обеспечивает запуск с правами суперпользователя, потому что Docker обычно требуется такие права.
+![photo_5318794157298412346_y](https://github.com/user-attachments/assets/24806b99-2ef8-41cd-9b24-37918c29f264)
+
 
 19. `sudo vi docker-compose.yamlsudo vi docker-compose.yaml` - Эта команда открывает файл `docker-compose.yaml` в текстовом редакторе `vi` с правами суперпользователя. В этом файле, скорее всего, будут храниться настройки и конфигурация для запуска контейнеров с помощью Docker Compose.
 
 20. `sudo vi prometheus.yaml`- Аналогично предыдущей команде, эта команда открывает файл `prometheus.yaml` в редакторе `vi` с правами суперпользователя. Этот файл может содержать конфигурацию для Prometheus, системы мониторинга и оповещения.
 
-21. `/mnt/common_volume/swarm/grafana/config/prometheus.yaml - исправить targets: на exporter:9100`- Это скорее не команда, а комментарий с инструкцией о том, что нужно сделать с файлом `prometheus.yaml`, который был открыт ранее. Задача заключается в том, чтобы изменить значение параметра `targets` в этом файле, чтобы оно указывало на `exporter:9100`. Заменив это значение, вы настраиваете, откуда Prometheus должен собирать метрики.
+![photo_5318794157298412358_y](https://github.com/user-attachments/assets/6eeb88ea-13a2-4536-bffc-870d10fd71f1)
+
+
+22. `/mnt/common_volume/swarm/grafana/config/prometheus.yaml - исправить targets: на exporter:9100`- Это скорее не команда, а комментарий с инструкцией о том, что нужно сделать с файлом `prometheus.yaml`, который был открыт ранее. Задача заключается в том, чтобы изменить значение параметра `targets` в этом файле, чтобы оно указывало на `exporter:9100`. Заменив это значение, вы настраиваете, откуда Prometheus должен собирать метрики.
 
 
 
