@@ -87,8 +87,11 @@ LR1
 - Конечный символ `*` означает все файлы (и, возможно, каталоги) в указанной директории.
 
 17. `mv grafana.yaml docker-compose.yaml`- Команда `mv` (move) переименовывает файл или перемещает его в другую директорию. В данном случае файл `grafana.yaml` переименовывается в `docker-compose.yaml`. Этот файл, вероятно, используется для настройки Docker Compose.
+    
+![photo_5318794157298412346_y (1)](https://github.com/user-attachments/assets/3e1bc9ab-8364-4fc2-8ecd-09d5a1bdf408)
 
-18. `sudo docker compose up -d`- Эта команда запускает Docker Compose с конфигурацией, указанной в `docker-compose.yaml`.
+
+19. `sudo docker compose up -d`- Эта команда запускает Docker Compose с конфигурацией, указанной в `docker-compose.yaml`.
 - Опция `-d` (detached mode) означает, что контейнеры будут запущены в фоновом режиме.
 - Использование `sudo` обеспечивает запуск с правами суперпользователя, потому что Docker обычно требуется такие права.
 ![photo_5318794157298412346_y](https://github.com/user-attachments/assets/24806b99-2ef8-41cd-9b24-37918c29f264)
