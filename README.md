@@ -15,6 +15,9 @@ LR1
 - `wget` - Утилита для загрузки файлов.
 - `-P /etc/yum.repos.d/`- Опция `-P` указывает `wget`, куда сохранить загруженный файл.
 - `https://download.docker.com/linux/centos/docker-ce.repo`- URL-адрес файла, который нужно скачать.
+
+  ![image](https://github.com/user-attachments/assets/6b5535df-6503-4365-b649-4cdcba2a82f2)
+
   
 3. `sudo yum install docker-ce docker-ce-cli containerd.io` - Эта команда устанавливает Docker и его компоненты.
 - `docker-ce` -  Это версия Docker Community Edition.
