@@ -41,7 +41,7 @@ LR1
 - `grep 'tag_name'`- Ищет строку, содержащую `tag_name`, что указывает на версию.
 - `cut -d\" -f4`- Разделяет строку по двойным кавычкам и выводит четвертое поле, которое является номером версии.
 - `COMVER=`- Присваивает результат переменной `COMVER`.
-![photo_5318794157298412301_y](https://github.com/user-attachments/assets/872c3776-3381-479f-a243-09a8c047760d)
+- ![photo_5318794157298412301_y](https://github.com/user-attachments/assets/872c3776-3381-479f-a243-09a8c047760d)
 
 
 7. `sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`- Эта команда загружает последнюю версию Docker Compose и устанавливает ее в систему.
