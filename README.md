@@ -51,6 +51,6 @@ LR1
 - `git clone`- Команда для клонирования репозитория.
 - `https://github.com/skl256/grafana_stack_for_docker.git`- URL репозитория, который будет клонирован.
 
-11. cd grafana_stack_for_docker** - Команда `cd` (change directory) используется для перехода в директорию с именем `grafana_stack_for_docker`. Это означает, что текущая рабочая директория будет изменена на `grafana_stack_for_docker`, что позволит вам выполнять последующие команды внутри этой папки.
+11. `cd grafana_stack_for_docker**` - Команда `cd` (change directory) используется для перехода в директорию с именем `grafana_stack_for_docker`. Это означает, что текущая рабочая директория будет изменена на `grafana_stack_for_docker`, что позволит вам выполнять последующие команды внутри этой папки.
 
 
