@@ -113,6 +113,8 @@ LR1
     * Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
     * Select Prometheus ждем кнопку "Import"
 
+![photo_5318794157298412336_y](https://github.com/user-attachments/assets/6afa37e9-a458-40e1-aa05-95938c289fff)
+
 # #VictoriaMetrics
 
 
