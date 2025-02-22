@@ -90,15 +90,10 @@ LR1
     
 ![photo_5318794157298412346_y (1)](https://github.com/user-attachments/assets/3e1bc9ab-8364-4fc2-8ecd-09d5a1bdf408)
 
-
-19. `sudo docker compose up -d`- Эта команда запускает Docker Compose с конфигурацией, указанной в `docker-compose.yaml`.
+18. `sudo docker compose up -d`- Эта команда запускает Docker Compose с конфигурацией, указанной в `docker-compose.yaml`.
 - Опция `-d` (detached mode) означает, что контейнеры будут запущены в фоновом режиме.
 - Использование `sudo` обеспечивает запуск с правами суперпользователя, потому что Docker обычно требуется такие права.
 ![photo_5318794157298412346_y](https://github.com/user-attachments/assets/24806b99-2ef8-41cd-9b24-37918c29f264)
-
-
-19. `sudo vi docker-compose.yamlsudo vi docker-compose.yaml` - Эта команда открывает файл `docker-compose.yaml` в текстовом редакторе `vi` с правами суперпользователя. В этом файле, скорее всего, будут храниться настройки и конфигурация для запуска контейнеров с помощью Docker Compose.
-
 
 Grafana
 
