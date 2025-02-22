@@ -40,13 +40,17 @@ LR1
 - `curl -s`- Делает запрос к API GitHub и включает опцию `-s` для подавления вывода прогресса.
 - `grep 'tag_name'`- Ищет строку, содержащую `tag_name`, что указывает на версию.
 - `cut -d\" -f4`- Разделяет строку по двойным кавычкам и выводит четвертое поле, которое является номером версии.
-- `COMVER=`- Присваивает результат переменной `COMVER`. \
+- `COMVER=`- Присваивает результат переменной `COMVER`.
+![photo_5318794157298412301_y](https://github.com/user-attachments/assets/872c3776-3381-479f-a243-09a8c047760d)
+
 
 7. `sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`- Эта команда загружает последнюю версию Docker Compose и устанавливает ее в систему.
 - `curl -L`- Загружает по URL и следует любым перенаправлениям.
 - `"$COMVER"`- Использует переменную, содержащую номер версии.
 - `$(uname -s)` и `$(uname -m)`-  Определяет операционную систему и архитектуру (например, Linux и x86_64).
 - `-o /usr/bin/docker-compose`- Указывает, куда сохранить загруженный файл.
+![photo_5318794157298412313_y](https://github.com/user-attachments/assets/070d41d5-2fc4-4567-8309-c36dd807a229)
+
 
 8. `sudo chmod +x /usr/bin/docker-compose`- Эта команда добавляет разрешение на выполнение загруженного файла Docker Compose. 
 - `chmod +x`-  Утилита для изменения разрешений.
