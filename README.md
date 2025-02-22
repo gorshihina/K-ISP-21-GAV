@@ -7,25 +7,21 @@ LR1
 - `install` -Подкоманда для установки пакета.
 - `wget` - Имя пакета, который необходимо установить.
 
- ![image](https://github.com/user-attachments/assets/06a75246-c870-4c77-b3ec-20e37544de64)
-
+![image](https://github.com/user-attachments/assets/06a75246-c870-4c77-b3ec-20e37544de64)
 
 2. `sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo` - Эта команда загружает файл репозитория Docker для CentOS и помещает его в каталог `yum.repos.d`.
-
 - `wget` - Утилита для загрузки файлов.
 - `-P /etc/yum.repos.d/`- Опция `-P` указывает `wget`, куда сохранить загруженный файл.
 - `https://download.docker.com/linux/centos/docker-ce.repo`- URL-адрес файла, который нужно скачать.
 
- ![image](https://github.com/user-attachments/assets/6b5535df-6503-4365-b649-4cdcba2a82f2)
+![image](https://github.com/user-attachments/assets/6b5535df-6503-4365-b649-4cdcba2a82f2)
 
-  
 3. `sudo yum install docker-ce docker-ce-cli containerd.io` - Эта команда устанавливает Docker и его компоненты.
 - `docker-ce` -  Это версия Docker Community Edition.
 - `docker-ce-cli` - Командная строка для взаимодействия с Docker.
 - `containerd.io` - Служба, отвечающая за управление контейнерами и их жизненным циклом.
 
- ![image](https://github.com/user-attachments/assets/ce5f6fb7-89a7-4ab6-aeaa-e0b7a2f37d17)
- 
+![image](https://github.com/user-attachments/assets/ce5f6fb7-89a7-4ab6-aeaa-e0b7a2f37d17)
   
 4. `sudo systemctl enable docker --now` - Эта команда включает сервис Docker и запускает его немедленно.  
 - `systemctl` - Утилита для управления системными службами.
@@ -41,16 +37,16 @@ LR1
 - `grep 'tag_name'`- Ищет строку, содержащую `tag_name`, что указывает на версию.
 - `cut -d\" -f4`- Разделяет строку по двойным кавычкам и выводит четвертое поле, которое является номером версии.
 - `COMVER=`- Присваивает результат переменной `COMVER`.
-- ![photo_5318794157298412301_y](https://github.com/user-attachments/assets/872c3776-3381-479f-a243-09a8c047760d)
-
+  
+![photo_5318794157298412301_y](https://github.com/user-attachments/assets/872c3776-3381-479f-a243-09a8c047760d)
 
 7. `sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`- Эта команда загружает последнюю версию Docker Compose и устанавливает ее в систему.
 - `curl -L`- Загружает по URL и следует любым перенаправлениям.
 - `"$COMVER"`- Использует переменную, содержащую номер версии.
 - `$(uname -s)` и `$(uname -m)`-  Определяет операционную систему и архитектуру (например, Linux и x86_64).
 - `-o /usr/bin/docker-compose`- Указывает, куда сохранить загруженный файл.
-![photo_5318794157298412313_y](https://github.com/user-attachments/assets/070d41d5-2fc4-4567-8309-c36dd807a229)
 
+![photo_5318794157298412313_y](https://github.com/user-attachments/assets/070d41d5-2fc4-4567-8309-c36dd807a229)
 
 8. `sudo chmod +x /usr/bin/docker-compose`- Эта команда добавляет разрешение на выполнение загруженного файла Docker Compose. 
 - `chmod +x`-  Утилита для изменения разрешений.
@@ -59,14 +55,14 @@ LR1
 9. `docker-compose --version`- Эта команда проверяет установленную версию Docker Compose.
 - `docker-compose`- Утилита для работы с Docker Compose.
 - `--version`- Опция, которая выводит информацию о версии.
+  
 ![photo_5318794157298412316_x (1)](https://github.com/user-attachments/assets/78bb2533-e097-4345-a332-139f198df262)
-
 
 10. `git clone https://github.com/skl256/grafana_stack_for_docker.git`- Эта команда создает локальную копию репозитория Git.
 - `git clone`- Команда для клонирования репозитория.
 - `https://github.com/skl256/grafana_stack_for_docker.git`- URL репозитория, который будет клонирован.
+  
 ![photo_5318794157298412331_x](https://github.com/user-attachments/assets/9eac7661-0a58-433a-9ea6-84a44be9a847)
-
 
 11. `cd grafana_stack_for_docker*` - Команда `cd` (change directory) используется для перехода в директорию с именем `grafana_stack_for_docker`. Это означает, что текущая рабочая директория будет изменена на `grafana_stack_for_docker`, что позволит вам выполнять последующие команды внутри этой папки.
 
@@ -93,17 +89,18 @@ LR1
 18. `sudo docker compose up -d`- Эта команда запускает Docker Compose с конфигурацией, указанной в `docker-compose.yaml`.
 - Опция `-d` (detached mode) означает, что контейнеры будут запущены в фоновом режиме.
 - Использование `sudo` обеспечивает запуск с правами суперпользователя, потому что Docker обычно требуется такие права.
+  
 ![photo_5318794157298412346_y](https://github.com/user-attachments/assets/24806b99-2ef8-41cd-9b24-37918c29f264)
 
-## Grafana
+# # Grafana
 
-* переходим на сайт `localhost:3000`
+* Переходим на сайт `localhost:3000`
     * User & Password GRAFANA: `admin`
     * Код графаны: `3000`
     * Код прометеуса: `http://prometheus:9090`
 * В меню выбираем вкладку Dashboards и создаем Dashboard
-    * ждем кнопку +Add visualization, а после "Configure a new data source"
-    * выбираем Prometheus
+    * Ждем кнопку +Add visualization, а после "Configure a new data source"
+    * Выбираем Prometheus
     * Connection
     * `http://prometheus:9090`
 * Authentication
@@ -112,7 +109,7 @@ LR1
         * Password: `admin`
         * Нажимаем на Save & test и должно показывать зелёную галочку
 * В меню выбираем вкладку Dashboards и создаем Dashboard
-    * ждем кнопку "Import dashboard"
+    * Ждем кнопку "Import dashboard"
     * Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
     * Select Prometheus ждем кнопку "Import"
 
