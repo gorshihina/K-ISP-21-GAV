@@ -23,6 +23,9 @@ LR1
 - `docker-ce` -  Это версия Docker Community Edition.
 - `docker-ce-cli` - Командная строка для взаимодействия с Docker.
 - `containerd.io` - Служба, отвечающая за управление контейнерами и их жизненным циклом.
+
+ ![image](https://github.com/user-attachments/assets/ce5f6fb7-89a7-4ab6-aeaa-e0b7a2f37d17)
+ 
   
 4. `sudo systemctl enable docker --now` - Эта команда включает сервис Docker и запускает его немедленно.  
 - `systemctl` - Утилита для управления системными службами.
