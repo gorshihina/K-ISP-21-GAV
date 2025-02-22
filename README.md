@@ -95,9 +95,28 @@ LR1
 - Использование `sudo` обеспечивает запуск с правами суперпользователя, потому что Docker обычно требуется такие права.
 ![photo_5318794157298412346_y](https://github.com/user-attachments/assets/24806b99-2ef8-41cd-9b24-37918c29f264)
 
-Grafana
+## Grafana
 
-VictoriaMetrics
+* переходим на сайт `localhost:3000`
+    * User & Password GRAFANA: `admin`
+    * Код графаны: `3000`
+    * Код прометеуса: `http://prometheus:9090`
+* В меню выбираем вкладку Dashboards и создаем Dashboard
+    * ждем кнопку +Add visualization, а после "Configure a new data source"
+    * выбираем Prometheus
+    * Connection
+    * `http://prometheus:9090`
+* Authentication
+    * Basic authentication
+        * User: `admin`
+        * Password: `admin`
+        * Нажимаем на Save & test и должно показывать зелёную галочку
+* В меню выбираем вкладку Dashboards и создаем Dashboard
+    * ждем кнопку "Import dashboard"
+    * Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
+    * Select Prometheus ждем кнопку "Import"
+
+# #VictoriaMetrics
 
 
 
