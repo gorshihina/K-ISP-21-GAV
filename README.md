@@ -94,21 +94,21 @@ LR1
 
 # # Grafana
 
-* Переходим на сайт `localhost:3000`
+- Переходим на сайт `localhost:3000`
     * User & Password GRAFANA: `admin`
     * Код графаны: `3000`
     * Код прометеуса: `http://prometheus:9090`
-* В меню выбираем вкладку Dashboards и создаем Dashboard
+- В меню выбираем вкладку Dashboards и создаем Dashboard
     * Ждем кнопку +Add visualization, а после "Configure a new data source"
     * Выбираем Prometheus
     * Connection
     * `http://prometheus:9090`
-* Authentication
+- Authentication
     * Basic authentication
         * User: `admin`
         * Password: `admin`
         * Нажимаем на Save & test и должно показывать зелёную галочку
-* В меню выбираем вкладку Dashboards и создаем Dashboard
+- В меню выбираем вкладку Dashboards и создаем Dashboard
     * Ждем кнопку "Import dashboard"
     * Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
     * Select Prometheus ждем кнопку "Import"
