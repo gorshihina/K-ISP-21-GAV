@@ -51,10 +51,11 @@ LR1
 - `git clone`- Команда для клонирования репозитория.
 - `https://github.com/skl256/grafana_stack_for_docker.git`- URL репозитория, который будет клонирован.
 
-11. `cd grafana_stack_for_docker**` - Команда `cd` (change directory) используется для перехода в директорию с именем `grafana_stack_for_docker`.
-12.  Это означает, что текущая рабочая директория будет изменена на `grafana_stack_for_docker`, что позволит вам выполнять последующие команды внутри этой папки.
+11. `cd grafana_stack_for_docker**` - Команда `cd` (change directory) используется для перехода в директорию с именем `grafana_stack_for_docker`. Это означает, что текущая рабочая директория будет изменена на `grafana_stack_for_docker`, что позволит вам выполнять последующие команды внутри этой папки.
 
-13. `sudo mkdir -p /mnt/common_volume/swarm/grafana/config**` - Команда `mkdir` (make directory) создает новую директорию.
+12. `sudo mkdir -p /mnt/common_volume/swarm/grafana/config**` - Команда `mkdir` (make directory) создает новую директорию.
  Опция `-p` позволяет создать промежуточные директории, если они не существуют. В данном случае создается директория `/mnt/common_volume/swarm/grafana/config`.
  Использование `sudo` означает, что команда будет выполнена с правами суперпользователя, что нужно для создания директорий в защищенных местах файловой системы.
+
+
 
