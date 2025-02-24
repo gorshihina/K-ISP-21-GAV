@@ -1,5 +1,5 @@
-# K-ISP-21-Gorshihina
-LR1
+# Gorshihina Aleksandra/ Sash4ka
+
 
 1. `sudo yum install wget` - эта команда устанавливает утилиту `wget`, которая используется для загрузки файлов по HTTP, HTTPS и FTP. 
 - `sudo` -Запуск команды с правами суперпользователя (администратора).
