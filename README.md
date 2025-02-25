@@ -113,13 +113,15 @@
     * Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
     * Select Prometheus ждем кнопку "Import"
 
+![telegram-cloud-photo-size-2-5328154703512597036-y](https://github.com/user-attachments/assets/9bde94ac-710b-4bcc-868b-cd4ca74f8e94)
+
+
 `sudo vi prometheus.yaml`:
    - `sudo`- Эта команда позволяет пользователю выполнять команды с привилегиями администратора (root). Может потребоваться ввод пароля.
    - `vi`-  Это текстовый редактор, который часто используется для редактирования файлов в терминале. 
    - `prometheus.yaml`- Это имя файла, который вы хотите отредактировать. В данном случае это файл конфигурации для Prometheus, системы мониторинга и алертинга. Файл имеет расширение.
    -`.yaml`, что указывает на то, что он написан в формате YAML (YAML Ain't Markup Language), который часто используется для написания конфигураций.
 
-![photo_5318794157298412336_y](https://github.com/user-attachments/assets/6afa37e9-a458-40e1-aa05-95938c289fff)
 
 
 ![telegram-cloud-photo-size-2-5328154703512597001-y](https://github.com/user-attachments/assets/bfb958f7-0468-47b6-9893-ca423332ee94)
