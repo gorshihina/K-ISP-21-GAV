@@ -121,14 +121,14 @@
    - `prometheus.yaml`- Это имя файла, который вы хотите отредактировать. В данном случае это файл конфигурации для Prometheus, системы мониторинга и алертинга. Файл имеет расширение.
    -`.yaml`, что указывает на то, что он написан в формате YAML (YAML Ain't Markup Language), который часто используется для написания конфигураций.
 
-- `sudo docker compose up -d` используется для запуска приложений, описанных в `docker-compose.yml` файле, с использованием Docker Compose.
-
 ![telegram-cloud-photo-size-2-5328154703512597001-y](https://github.com/user-attachments/assets/bfb958f7-0468-47b6-9893-ca423332ee94)
 
+- `sudo docker compose up -d` позволяет запустить многоконтейнерное приложение в фоновом режиме с применением настроек, определённых в файле `docker-compose.yml`, с повышенными привилегиями.
 
 ![telegram-cloud-photo-size-2-5328154703512596955-y](https://github.com/user-attachments/assets/1539e7d5-97de-4b76-a37f-ffee6c43c521)
 
 
+- `sudo vi grafana.yaml`- эта команда позволяет  открыть файл `grafana.yaml` с правами администратора, чтобы мы могли вносить изменения в его содержание. После ввода команды может быть предложено ввести пароль, если не работаете под учетной записью root.
 
 ![telegram-cloud-photo-size-2-5328154703512596953-y](https://github.com/user-attachments/assets/6125d7d8-5316-40a0-b295-d17ce16a60cb)
 
