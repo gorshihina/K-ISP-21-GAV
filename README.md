@@ -113,7 +113,21 @@
     * Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
     * Select Prometheus ждем кнопку "Import"
 
+      
+
 ![photo_5318794157298412336_y](https://github.com/user-attachments/assets/6afa37e9-a458-40e1-aa05-95938c289fff)
+
+
+![telegram-cloud-photo-size-2-5328154703512597001-y](https://github.com/user-attachments/assets/bfb958f7-0468-47b6-9893-ca423332ee94)
+
+
+![telegram-cloud-photo-size-2-5328154703512596955-y](https://github.com/user-attachments/assets/1539e7d5-97de-4b76-a37f-ffee6c43c521)
+
+
+
+![telegram-cloud-photo-size-2-5328154703512596953-y](https://github.com/user-attachments/assets/6125d7d8-5316-40a0-b295-d17ce16a60cb)
+
+
 
 # #VictoriaMetrics
 
